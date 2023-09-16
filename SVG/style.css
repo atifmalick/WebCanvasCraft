@@ -1,0 +1,51 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar ul li{
+    cursor: pointer;
+    display: inline;
+    padding-right: 9%;
+    float: right;
+    font-size: 1rem;
+}
+.navbar ul li:hover{
+    cursor: pointer;
+    color: brown;
+}
+button{
+    cursor: pointer;
+    background-color: yellowgreen;
+    color: black;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: yellowgreen;
+}
+.container{
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.text{
+    margin-top: 3%;
+    float: right;
+    width: 55%;
+    font-size: 1.5rem;
+    margin-left:17%;
+}
+.image{
+width: 40%;
+float: left;
+margin-right: 20%;
+}
+p{
+    width: 50%;
+    font-size: 1.3rem;
+    padding: 3%;
+}
