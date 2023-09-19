@@ -1,0 +1,81 @@
+.parent{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: antiquewhite;
+}
+.child{
+    width: 50%;
+    height: 30%;
+    
+    display: grid;
+    place-items: center;
+}
+.outer-circle{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(241, 10, 126, 0.8);
+    border-radius: 50%;
+    border: 2px solid black;
+    display: grid;
+    place-items: center;
+    box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    }
+    .outer-circle::before{
+        content: "";
+        position: absolute;
+        width: 145px;
+        height: 145px;
+        border: 5px solid pink;
+        border-radius: 50%;
+        border-right: 0;
+        border-top: 0;
+
+    }
+.inner-circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    position: relative;
+}
+.inner-circle::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 5px solid white;
+    left: -20px;
+    top: 20px;
+    border-bottom-left-radius: 50px;
+    border-top: 0;
+    border-right: 0;
+    transform: rotate(25deg);
+    opacity: 0.8;
+}
+.eye{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    position: relative;
+    left: 6px;
+    top: -35px;
+    background-color: black;
+    box-shadow: 30px 0 0 0;
+
+}
+.eye::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    border: 3px solid black;
+    top: 15px;
+    left: 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top:0 ;
+
+}
