@@ -1,0 +1,28 @@
+body{
+    background-color: #9ffce0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+.cofee-mug{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #3f2616;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px #442918,0px 0px 0px 25px #3c2415,0px 0px 0px 44px #f39407,0px 0px 0px 65px #feaa3a, 0 120px 0 -20px #442918,100px 70px 0px -25px #442918,80px 140px 0px -10px #442918,0px 210px 0px -50px #442918,20px 250px 0 -65px #442918;
+
+}
+.cofee-mug::before{
+content: "";
+position: absolute;
+background-color: #f39407;
+width: 60px;
+height: 75px;
+top: -85px;
+right: -75px;
+transform: rotate(45deg);
+}
